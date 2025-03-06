@@ -30,11 +30,31 @@ function largestWord(sentence) {
 
     for (let word of words) {
         if (word.length > longestWord.length) {
-            longestWord = word; 
+            longestWord = word;
         }
     }
     return longestWord;
 }
-console.log(largestWord("you're welcome into programming life")); 
-console.log(largestWord("Find the longest word in this sentence")); 
-console.log(largestWord("Hello world")); 
+console.log(largestWord("you're welcome into programming life"));
+console.log(largestWord("Find the longest word in this sentence"));
+console.log(largestWord("Hello world"));
+
+
+const numbers = [3, 4, 6, 7, 89];
+numbers.forEach(function (number) {
+    if (number % 2 === 0) {
+        number -= 1
+        console.log(number)
+    } else {
+        number += 2
+        console.log(number);
+    }
+
+})
+function titleCase(string) {
+    return string.split(" ") 
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+        .join(" "); 
+}
+console.log(titleCase("we are reach on luach time")); 
+
