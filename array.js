@@ -16,10 +16,25 @@ function countVowels(strin) {
 }
 console.log(countVowels("a e i o u"));
 
-function isPalindrome(words){
+function isPalindrome(words) {
     const title = "umuvumu";
     const newArr = words.split("").reverse().join("");
-   return newArr === title ;
+    return newArr === title;
 
 }
 console.log(isPalindrome("umuvumu"));
+
+function largestWord(sentence) {
+    const words = sentence.split(" ");
+    let longestWord = "";
+
+    for (let word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word; 
+        }
+    }
+    return longestWord;
+}
+console.log(largestWord("you're welcome into programming life")); 
+console.log(largestWord("Find the longest word in this sentence")); 
+console.log(largestWord("Hello world")); 
