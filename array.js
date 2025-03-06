@@ -15,3 +15,11 @@ function countVowels(strin) {
     return count;
 }
 console.log(countVowels("a e i o u"));
+
+function isPalindrome(words){
+    const title = "umuvumu";
+    const newArr = words.split("").reverse().join("");
+   return newArr === title ;
+
+}
+console.log(isPalindrome("umuvumu"));
